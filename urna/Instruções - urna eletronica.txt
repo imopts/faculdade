@@ -1,0 +1,25 @@
+Programa criado com base no jdk1.8.0_121
+
+-
+
+Executar o script para criação do banco de dados.
+
+ou
+
+Criar um banco de dados similar ao descrito no DER.
+
+-
+
+Se necessário, modificar o endereço e porta para o servidor do BD, nome do BD, usuário e senha na classe "sql.java" localizada no pacote "SQLquery".
+
+-
+
+O conector correto para o mysql já está incluso nos arquivos do projeto e foi adicionado como dependência para a execução do programa. Em caso de erro, readicionar o conector como dependência do projeto.
+
+-
+
+Executar a classe principal "principal.java" do pacote "telas".
+
+-
+
+As classes estão codificadas em "ISO-8859-1". Caso algum caractere especial (á, à, ã, ç, etc) seja convertido pela IDE, modificar as opções de codificação de texto para o formato "ISO-8859-1", "UTF-8" ou outra codificação que aceite acentuação e cedilhas.
