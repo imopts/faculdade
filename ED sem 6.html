@@ -1,0 +1,35 @@
+1) Os alunos do curso de computação de uma grande universidade utilizam a linguagem de programação C para implementar seus programas. A FIGURA 1 ilustra os procedimentos realizados pelo compilador da linguagem C para gerar um arquivo executável, que em um primeiro momento é apenas uma entidade passiva que para ter alguma utilidade precisa se transformar em um processo para ser executado. Todo processo para ser executado, após a checagem inicial, precisa ser adicionado à fila de processos prontos. Caberá ao escalonador de CPU enviá-lo para execução assim que solicitado pelo despachante.
+
+Durante a execução de um processo são utilizados em geral: variáveis, objetos, funções, etc. que deverão ser alocados na memória, o problema é que o sistema operacional ocupa parte da memória. A FIGURA 2 ilustra a MMU em operação.
+
+ 
+Qual a função da MMU no processo de execução de um processo?
+ 
+A 	
+Converter um endereço físico em um endereço lógico.
+
+B 	
+Dispositivo de hardware que mapeia endereços virtuais em físicos.
+
+C 	
+Adicionar o endereço lógico a memória.
+
+D 	
+Servir de registrador de realocação entre a CPU e a memória.
+
+E 	
+Monitorar os procedimentos dos programas na CPU e na memória.
+
+--- resp ---
+
+Endereço lógico é o aquele que foi calculado desde o tempo de compilação até o tempo de carga da biblioteca no sistema através do loader/compilador/link editor. Em tempo de execução a imagem alocada na memória deve ter seu endereço recalculado em um endereço que efetivamente está na memória, o endereço físico.
+Na geração da imagem na memória RAM, é gerado o endereço físico.
+Quando o processador executa uma instrução ele deve buscar as variáveis, objetos, funções como os endereços alocados na memória RAM, ou seja, os endereços físicos.
+No entanto, em tempo de execução, o processador deve acessar as variáveis, objetos, funções com o endereço físico que foi alocado na memória RAM.
+Na troca de contexto o despachante registra na MMU onde foi realocado o processo e durante a execução a MMU converte o endereço lógico em endereço físico.
+
+A) errada.
+B) correta.
+C) errada.
+D) errada.
+E) errada.
