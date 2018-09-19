@@ -1,0 +1,27 @@
+FREE - mostra a memória total, buffer cache e swap.
+    total de memória no sistema
+    buffer cache é 
+    swap é a extensão da memória no HD/ memória secundária
+
+TOP - mostra a fila de processos.
+    Mostra o PID,
+    usuário,
+    comando,
+    prioridade,
+    nice,
+    % de CPU gasto,
+    % de memória gasta,
+    quantidade de tempo em execução
+
+PS AXL - all executed list
+    PID - ID do processo,
+    UID - id do usuário,
+    PRI - prioridade,
+    processos (processos do kernel estão entre colchete)
+
+RUN LEVELS
+    0 - (halt)
+    1 - (mono usuário)
+    último - (reboot)
+    nos diretórios do sistema, podemos encontrar os seguintes diretórios: rc0.d, rc1.d, rc2.d, rc3.d, rc4.d, rc5.d, rc6.d
+    dentro dos diretórios rc*.d: s lança processo, k mata processo
