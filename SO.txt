@@ -25,3 +25,16 @@ RUN LEVELS
     último - (reboot)
     nos diretórios do sistema, podemos encontrar os seguintes diretórios: rc0.d, rc1.d, rc2.d, rc3.d, rc4.d, rc5.d, rc6.d
     dentro dos diretórios rc*.d: s lança processo, k mata processo
+
+diretório: /etc
+    nos diretórios do sistema, podemos encontrar os seguintes diretórios relacionado aos RUN LEVELS: rc0.d, rc1.d, rc2.d, rc3.d, rc4.d, rc5.d, rc6.d
+    no /proc encontramos informações sobre os processos
+    no /sys encontramos informações sobre o sistema
+    no /dev encontramos uma lista de dispositivos passíveis de serem montados no linux
+    no /lib encontramos informações sobre os dispositivos em uso pelo sistema
+
+ps ax - mostra os processos em execução e o estado
+
+bg - excuta comando em segundo plano
+
+fg - executa o comando em primeiro plano
